@@ -1,7 +1,7 @@
 var star = ''
 
 for(var i = 0; i<5; i++){
-    for(var j = 0; j<5; j++){
+    for(var j = 0; j<=i; j++){
         star += "*"
     }
     star += '\n'
@@ -33,5 +33,24 @@ console.log (star)*/
 // *****
 // *****
 
+
+/*
+4.
+for(var i = 0; i<5; i++){
+    for(var j = 0; j<=i; j++){
+        star += "*"
+    }
+    star += '\n'
+}
+console.log (star)
+
+output :
+*
+**
+***
+****
+*****
+
+*/
 
 // star += '*' sama saja dengan star = star + '*'
