@@ -1,8 +1,9 @@
 var star = ''
 
 for(var i = 0; i<5; i++){
-    for(var j = 0; j<5; j++)
-    star += "*"
+    for(var j = 0; j<5; j++){
+        star += "*"
+    }
     star += '\n'
 }
 console.log (star)
@@ -18,12 +19,12 @@ console.log (star)
 // *
 
 // 3 : 
-// for(var i = 0; i<5; i++){
-//     for(var j = 0; j<5; j++)
-//     star += "*"
-//     star += '\n'
-// }
-// console.log (star)
+/* for(var i = 0; i<5; i++){
+    for(var j = 0; j<5; j++)
+    star += "*"
+    star += '\n'
+}
+console.log (star)*/
 
 // output 3:
 // *****
