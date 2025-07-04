@@ -21,6 +21,7 @@ dadu()
 //scope 
 
 let bahasa = 'indonesia';  // Variabel dengan global scope
+let bahasaGlobal = 'bakumpai'
 
 function typeBahasa() {
     let bahasa = 'inggris';  // Variabel dengan local scope (hanya bisa diakses dalam fungsi typeBahasa)
@@ -30,7 +31,7 @@ function typeBahasa() {
 console.log(bahasa);  // Output: indonesia (mengakses variabel global)
 
 typeBahasa();  // Output: inggris (mengakses variabel lokal dalam fungsi)
-e
+
 
 function typeBahasaGlobal() {
     console.log(bahasaGlobal);  // Mengakses variabel global
