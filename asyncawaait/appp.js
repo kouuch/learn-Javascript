@@ -12,9 +12,9 @@ const requestCallback = (url, success, failure) => {
 
 // Promise version
 const requestPromise = (url) => {
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            if(delay > 4000){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (delay > 4000) {
                 reject(`Error: Connection Timeout`)
             } else {
                 resolve(`Success : ${url} (${delay}ms)`)
@@ -22,3 +22,42 @@ const requestPromise = (url) => {
         }, delay)
     })
 }
+
+// callback hell
+// requestCallback(
+//     'movie',
+//     function (response) {
+//         console.log(`success`, response)
+//         requestCallback(
+//             'movie',
+//             function (response) {
+//                 console.log(`success`, response)
+//                 requestCallback(
+//                     'movie',
+//                     function (response) {
+//                         console.log(`success`, response)
+//                         requestCallback(
+//                             'movie',
+//                             function (response) {
+//                                 console.log(`success`, response)
+//                             },
+//                             function (err){
+//                                 console.log(`Error`, err)
+//                             }
+//                         )
+//                     },
+//                     function (err){
+//                         console.log(`Error`, err)
+//                     }
+//                 )
+//             },
+//             function (err){
+//                 console.log(`Error`, err)
+//             }
+//         )
+//     },
+    
+//     function (err){
+//         console.log(`Error`, err)
+//     }
+// )
