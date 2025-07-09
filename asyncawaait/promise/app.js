@@ -1,1 +1,4 @@
-console.log(`oke`)
+new Promise((resolve, reject) => {
+    resolve(() => { })
+    reject(() => { })
+})
