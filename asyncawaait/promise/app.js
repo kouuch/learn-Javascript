@@ -1,6 +1,8 @@
-const contohPromise = () =>{
+const contohPromise = () => {
     return new Promise((resolve, reject) => {
-        // resolve(() => { })
+        resolve(() => { 
+            console.log('success')
+        })
         // reject(() => { })
     })
 }
