@@ -49,5 +49,6 @@ const printRainbow = async () => {
     await changeColor()
     console.log(`done cuyy`)
 }
+// async bisa digunakan untuk chain method
 
 printRainbow()
