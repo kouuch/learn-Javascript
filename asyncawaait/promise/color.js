@@ -32,7 +32,7 @@ const changeColorss = async function () { //function expression
 Digunakan ketika fungsi harus disimpan dalam variabel, misalnya dalam callback atau event handler
 */
 
- async function changeColor(){ //Function Declaration
+async function changeColor(){ //Function Declaration
     await delayColorChange('tomato', 1000);
     await delayColorChange('#3D74B6', 1000)
     await delayColorChange('#9929EA', 1000)
@@ -43,4 +43,11 @@ Digunakan ketika fungsi harus disimpan dalam variabel, misalnya dalam callback a
 Digunakan ketika fungsi akan dipanggil di seluruh lingkup atau di awal kode
 */
 
-changeColorss().then((res) => alert(res))
+// changeColorss().then((res) => alert(res))
+
+const printRainbow = async () => {
+    await changeColor()
+    console.log(`done cuyy`)
+}
+
+printRainbow()
